@@ -1,0 +1,47 @@
+cd ..
+cd ./demo
+ls
+cat README.md
+echo "This line is for Question 2_2 of Homework 1 for BIOINF 575" >> README.md
+cat README.md
+git diff
+git add README.md
+git diff --help
+git diff --cached
+git status --help
+git status -v
+git commit -m "Added this line in README.md for Question 2_6 of Homework 1 for BIOINF 575"
+git status
+git push
+echo "This line is added by mistake." >> README.md
+git add README.md
+git diff --cached
+git commit -m "Added a line by mistake in README.md for Question 2_9 of Homework 1 for BIOINF 575"
+git log
+git checkout 78eac33fc1a5aa6dd88b179297e2b30f4299fa89 README.md
+git status
+git push
+cat README.md
+git diff
+git status >> gitQ_status.txt
+history | cut -c 8- | tail -n 40 > gitQ.txt
+
+
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+diff --git a/README.md b/README.md
+index 6d58608..0b6a42d 100644
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,3 @@
+ # demo
+ for HW
+ This line is for Question 2_2 of Homework 1 for BIOINF 575
+-This line is added by mistake.
